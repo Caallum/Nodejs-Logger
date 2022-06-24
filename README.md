@@ -1,5 +1,4 @@
 # Nodejs Logger
-> Unofficially a NPM package
 
 ## Getting started
 
@@ -36,8 +35,9 @@ This will return\
 
 There is more styles, for such things as logging stuff based on important and overall just keeping the console tidy, the different styles are: info, success, warning, error.
 
-The way to call these are:
+### The way to call these are:
 
+#### Info
 ```js
 new Logger({
   info: true,
@@ -45,7 +45,10 @@ new Logger({
 })
 ```
 
+##### Returns
+![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_213150396.png "Info Message Output")
 
+#### Success
 ```js
 new Logger({
   success: true,
@@ -53,6 +56,10 @@ new Logger({
 })
 ```
 
+##### Returns
+![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_213158266.png "Success Message Output")
+
+#### Warning
 ```js
 new Logger({
   warning: true,
@@ -60,9 +67,23 @@ new Logger({
 })
 ```
 
+##### Returns
+![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_213142504.png "Warning Message Output")
+
+#### Error
 ```js
 new Logger({
   error: true,
   message: "This is an error message"
 })
 ```
+
+##### Returns
+![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_213130883.png "Error Message Output")
+
+
+## Ending
+
+And that's it! I created this for a project I was working on and thought it was pretty handy to have as a GitHub repo. With a little help from google and some brainpower I made this inside about 10 minutes so "no errors will occur at all"!
+
+> Made by Caallum for public usage
