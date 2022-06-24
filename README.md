@@ -29,5 +29,40 @@ new Logger({
 })
 ```
 
-This will return 
+This will return\
 ![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_212525966.png "Normal Message Output")
+
+## More styles
+
+There is more styles, for such things as logging stuff based on important and overall just keeping the console tidy, the different styles are: info, success, warning, error.
+
+The way to call these are:
+
+```js
+new Logger({
+  info: true,
+  message: "This is an info message"
+})
+```
+
+
+```js
+new Logger({
+  success: true,
+  message: "This is a success message"
+})
+```
+
+```js
+new Logger({
+  warning: true,
+  message: "This is a warning message"
+})
+```
+
+```js
+new Logger({
+  error: true,
+  message: "This is an error message"
+})
+```
