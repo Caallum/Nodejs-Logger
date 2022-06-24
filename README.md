@@ -29,4 +29,5 @@ new Logger({
 })
 ```
 
-This will return ![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_212525966.png "Normal Message Output")
+This will return 
+![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_212525966.png "Normal Message Output")
