@@ -106,7 +106,7 @@ If you want to enable it, leave it as it is.
 To set the location of the log file, simply edit `FileName` to where you wish to store the log file. Example:
 
 ```js
-let FileName = `./logs/ErrorAndWarning.log
+let FileName = `./logs/ErrorAndWarning.log`
 ```
 
 ## Ending
