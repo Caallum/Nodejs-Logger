@@ -1,9 +1,24 @@
 const chalk = require("chalk");
 const moment = require("moment");
+const { writeFileSync, appendFileSync, existsSync } = require("node:fs");
+
+let FileName = `./src/development.logs`;
+let WriteToFile = true;
 
 module.exports = class Logger {
     constructor(data) {
         this.log(data);
+        if(WriteToFile) this.writeToLogs(data);
+    }
+
+    async writeToLogs(data) {
+        if(data.error || data.warning) {
+            if(existsSync(FileName)) {
+                appendFileSync(FileName, `${data.error ? "ERROR" : "WARNING"} ${await this.line()} ${data.message}\n`)
+            } else {
+                writeFileSync(FileName, `${data.error ? "ERROR" : "WARNING"} ${await this.line()} ${data.message}\n`)
+            }
+        }
     }
 
     async log(data) {
