@@ -2,7 +2,7 @@ import chalk from "chalk";
 import moment from "moment";
 import { writeFileSync, appendFileSync, existsSync } from "node:fs";
 
-let FileName = `./src/development.logs`;
+let FileName = `./development.logs`;
 let WriteToFile = true;
 
 export default class Logger {
