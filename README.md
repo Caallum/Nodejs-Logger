@@ -82,6 +82,33 @@ new Logger({
 ![Alt Text](https://github.com/Caallum/Nodejs-Logger/blob/main/images/image_2022-06-24_213130883.png "Error Message Output")
 
 
+## Extra Options
+
+### Writing WARNING and ERROR logs into a log file
+
+To get started, first go to the top of the file, you should see
+
+```js
+let FileName = `./src/development.logs`;
+let WriteToFile = true;
+```
+
+In these variables, you can edit to if you want to write logs to a file, and where you want to write the logs too.
+
+If you want to disable this feature, simply set `WriteToFile` to false using:
+
+```js
+let WriteToFile = false;
+```
+
+If you want to enable it, leave it as it is.
+
+To set the location of the log file, simply edit `FileName` to where you wish to store the log file. Example:
+
+```js
+let FileName = `./logs/ErrorAndWarning.log
+```
+
 ## Ending
 
 And that's it! I created this for a project I was working on and thought it was pretty handy to have as a GitHub repo. With a little help from google and some brainpower I made this inside about 10 minutes so "no errors will occur at all"!
